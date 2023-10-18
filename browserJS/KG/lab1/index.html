@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Color Picker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="picker">
+            <h2>Color Picker</h2>
+            <div>
+                <label for="color-picker">Выберите цвет:</label>
+                <input type="color" id="color-picker">
+            </div>
+        </div>
+
+        <div class="sliders" id="sliders">
+            <div class="block-of-sliders">
+                <div>
+                    <label for="r-slider">R:</label>
+                    <input class="slider" type="range" id="r-slider" min="0" max="255" value="0">
+                    <span id="rgb-r">0</span>
+                </div>
+                <div>
+                    <label for="g-slider">G:</label>
+                    <input class="slider" type="range" id="g-slider" min="0" max="255" value="0">
+                    <span id="rgb-g">0</span>
+                </div>
+                <div>
+                    <label for="b-slider">B:</label>
+                    <input class="slider" type="range" id="b-slider" min="0" max="255" value="0">
+                    <span id="rgb-b">0</span>
+                </div>
+            </div>
+            <div class="block-of-sliders">
+                <div>
+                    <label for="c-slider">C:</label>
+                    <input class="slider" type="range" id="c-slider" min="0" max="100" value="0">
+                    <span id="cmyk-c">0</span>
+                </div>
+                <div>
+                    <label for="m-slider">M:</label>
+                    <input class="slider" type="range" id="m-slider" min="0" max="100" value="0">
+                    <span id="cmyk-m">0</span>
+                </div>
+                <div>
+                    <label for="y-slider">Y:</label>
+                    <input class="slider" type="range" id="y-slider" min="0" max="100" value="0">
+                    <span id="cmyk-y">0</span>
+                </div>
+                <div>
+                    <label for="k-slider">K:</label>
+                    <input class="slider" type="range" id="k-slider" min="0" max="100" value="0">
+                    <span id="cmyk-k">0</span>
+                </div>
+            </div>
+            <div class="block-of-sliders">
+                <div>
+                    <label for="h-slider">H:</label>
+                    <input class="slider" type="range" id="h-slider" min="0" max="360" value="0">
+                    <span id="hsv-h">0</span>
+                </div>
+                <div>
+                    <label for="s-slider">S:</label>
+                    <input class="slider" type="range" id="s-slider" min="0" max="100" value="0">
+                    <span id="hsv-s">0</span>
+                </div>
+                <div>
+                    <label for="v-slider">V:</label>
+                    <input class="slider" type="range" id="v-slider" min="0" max="100" value="0">
+                    <span id="hsv-v">0</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="parameters">
+            <div>
+                <h3>RGB</h3>
+                <label>R:</label> <span id="rgb-r">0</span><br>
+                <label>G:</label> <span id="rgb-g">0</span><br>
+                <label>B:</label> <span id="rgb-b">0</span><br>
+            </div>
+
+            <div>
+                <h3>CMYK</h3>
+                <label>C:</label> <span id="cmyk-c">0</span><br>
+                <label>M:</label> <span id="cmyk-m">0</span><br>
+                <label>Y:</label> <span id="cmyk-y">0</span><br>
+                <label>K:</label> <span id="cmyk-k">0</span><br>
+            </div>
+
+
+            <div>
+                <h3>HSV</h3>
+                <label>H:</label> <span id="hsv-h">0</span><br>
+                <label>S:</label> <span id="hsv-s">0</span><br>
+                <label>V:</label> <span id="hsv-v">0</span><br>
+            </div>
+        </div> -->
+        <div>
+            <h3>Preview</h3>
+            <div class="color-preview" id="color-preview"></div>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="converting.js"></script>
+<script src="control.js"></script>
+
+</html>
